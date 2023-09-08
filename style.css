@@ -202,6 +202,7 @@ nav{
 @media (max-width: 1070px){
     #menu-icon{
         display: block;
+        margin-right: 30px;
     }
 
     nav{
@@ -240,7 +241,7 @@ nav{
         right: 2%;
     }
     header{
-        padding: 5px 40px ;
+        padding: 5px 0px ;
     }
     @media (max-height: 769px){
         button{
@@ -451,6 +452,7 @@ nav{
 .text .subtitle-page{
     font-weight: 800;
     font-size: 35px;
+    margin-bottom: 5px;
 }
 
 #bundle{
@@ -569,6 +571,11 @@ nav{
     #bundle{
         height: 25.5vh;
         width: auto;
+    }
+    @media(max-height: 740px){
+        .box{
+            height: 90vh;
+        }
     }
 }
 
