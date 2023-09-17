@@ -408,7 +408,7 @@ nav{
 }
 
 .image{
-    width: 100%;
+    width: 50%;
     height: 35vh;
     display: flex;
     justify-content: center;
@@ -424,7 +424,7 @@ nav{
 }
 
 .box{
-    width: 60%;
+    width: 50%;
     height: 45vh;
     background-color: #e2e2e2;
     border-radius: 25px;
@@ -445,10 +445,6 @@ nav{
     padding-left: 40px;
 }
 
-.text1{
-    font-size: 15px;
-}
-
 .text .subtitle-page{
     font-weight: 800;
     font-size: 35px;
@@ -458,11 +454,6 @@ nav{
 #bundle{
     height: 35.5vh;
     width: auto;
-}
-
-#sweater{
-    width: auto;
-    height: 50vh;
 }
 
 @media(max-width: 1523px){
@@ -476,6 +467,30 @@ nav{
     }
 }
 
+@media(max-width: 1400px){
+    .text .subtitle-page{
+        font-weight: 800;
+        font-size: 25px;
+    }
+    .image{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1275px){
+    .text .subtitle-page{
+        font-weight: 800;
+        font-size: 22px;
+    }
+    .image img{
+        width: auto;
+        height: 40vh;
+    }
+    .image{
+        width: 100%;
+    }
+}
+
 @media(max-width: 1155px){
     .text1{
         font-size: 12px;
@@ -495,6 +510,13 @@ nav{
     .text .subtitle-page{
         font-weight: 800;
         font-size: 22px;
+    }
+}
+
+@media(max-width: 1048px){
+    .text .subtitle-page{
+        font-weight: 800;
+        font-size: 20px;
     }
 }
 
@@ -504,22 +526,28 @@ nav{
         height: 100%;
         justify-content: start;
         padding-top: 40px;
+        width: 100%;
     }
 
     .box{
         width: 80%;
-        height: 80vh;
+        height: 65vh;
         background-color: #e2e2e2;
         border-radius: 25px;
         box-shadow: 0px 0px 10px 2px #ffffff;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 
     .text{
         text-align: center;
         margin-top: 40px;
         padding-left: 0;
+    }
+
+    .image{
+        width: 100%;
     }
 
     .image img{
@@ -539,6 +567,11 @@ nav{
 
     .materials{
         height: 600vh;
+    }
+
+    .text .subtitle-page{
+        font-weight: 800;
+        font-size: 25px;
     }
 }
 
@@ -574,7 +607,12 @@ nav{
     }
     @media(max-height: 740px){
         .box{
-            height: 90vh;
+            height: 70vh;
+        }
+    }
+    @media(max-height: 600px){
+        .box{
+            height: 75vh;
         }
     }
 }
